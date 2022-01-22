@@ -1,0 +1,104 @@
+Trabalhando com as importações
+
+- yarn add babel-plugin-module-resolver -D
+
+para ligar melhor com as importações dos components
+fiz toda a configuração em:
+
+- babel.config.js ( a partir da linha 5 em diante )
+- tsconfig.json ( a partir da linha 5 em diante )
+===================================================
+
+fonts personalizadas ( do projeto )
+expo install @expo-google-fonts/dm-sans @expo-google-fonts/dm-serif-display
+expo-app-loading -não sei pq, mas não está funcionando, trava o projeo(não instalar)
+===================================================
+
+yarn add styled-components
+yarn add @types/styled-components-react-native -D
+===================================================
+
+Documentação no NOTION (seguir essa documentação)
+https://efficient-sloth-d85.notion.site/Instala-o-e-Configura-o-Firebase-939e568bc5d240f8949a6ab1cafadd43
+
+FIREBASE
+1 - criar projeto no firebase
+2 - yarn add @react-native-firebase/app
+3 - Configuração no Android / vamos no console do Firebase para 
+adicionar um novo aplicativo Android. Então, clique no ícone do Android.
+
+ATENCAO - QUANDO FOR CRIAR NO FIREBASE O APP VC VAI PRECISAR DA CHAVE SHA1
+VC GERA AQUI MESMO NO TERMINAL
+cd android
+./gradlew signingReport
+
+aí ela vai estar no começo em:
+Variant: debugAndroidTest
+SHA1: 5E:8F:16:06:2E:A3:CD:2C:4A:0D:54:78:76:BA:A6:F3:8C:AB:F6:25
+--------------------------------------------
+demais instalações
+yarn add @react-native-firebase/firestore
+yarn add @react-native-firebase/auth
+yarn add @react-native-firebase/storage
+
+-----------------------------------
+para usar cores em gradiente
+
+expo install expo-linear-gradient
+
+--------------------------
+expo install expo-status-bar
+--------------------------
+para lidar caso seja no iphone, para nada ficar atrás das barrinhas
+de cima e de baixo caso tenha no iphone
+
+yarn add react-native-iphone-x-helper
+--------------------------
+
+expo install @react-native-async-storage/async-storage
+
+--------------------------
+
+UPLOAD DE IMAGEM - ImagePicker
+expo install expo-image-picker
+
+após instalar fazer as configurações seguindo a documentação:
+
+Example app.json with config plugin
+{
+  "expo": {
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ]
+  }
+}
+
+as outras configurações nesse link
+https://github.com/expo/expo/tree/master/packages/expo-image-picker
+--------------------------
+
+REACT NAVIGATION
+https://reactnavigation.org/docs/getting-started/
+
+yarn add @react-navigation/native
+expo install react-native-screens react-native-safe-area-context
+yarn add @react-navigation/native-stack
+
+yarn add @react-navigation/bottom-tabs
+--------------------------
+
+
+GERANDO APK NO EXPO
+expo whoami = ver se está logado
+expo login = caso não faça seu login
+
+expo build:android
+app-bundle
+generate new keystore
+
+
