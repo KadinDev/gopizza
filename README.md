@@ -16,15 +16,6 @@ Aplicação desenvolvida com Firebase no React Native, cuja responsabilidade é 
 * Firebase
 * Outros...
 
-## :rocket: Começando
-``` bash
-  # Clonar o projeto:
-  $ git clone https://github.com/MauricioPDuarte/GoPizza gopizza
-
-  # Entrar no diretório:
-  $ cd gopizza
-```
-
 ## :computer: Iniciando
 ```bash
   # Instalar as dependências:
